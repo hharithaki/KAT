@@ -1,6 +1,9 @@
 # KAT
 Knowledge-based Ad hoc Teamwork
 
-This repository include the code and video recordings of representative experimental runs in the HFO domain using the architecture KAT.
+This repository contains implementation files for a hybrid architecture for Ad hoc Teamwork, that combines knowledge-based reasoning with data-driven learning.
 
-This is the extended architecture of [HAAHT](https://github.com/hharithaki/HAAHT) which include the code and video recordings of our experiments in the Fort Attack domain.
+There are two folders in the repository: 
+
+1. 'Code': contains an implementation of the architecture.
+2. 'Videos': contains videos of experimental runs in the multi-agent benchmark simulation environments.

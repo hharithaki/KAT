@@ -1,0 +1,30 @@
+# Hybrid Architecture for Ad hoc Teamwork
+
+This folder includes the video recordings of some representative experimental runs, each corresponding to one game/episode. Each experiment begins with three guards (green) and three attackers (red) deployed in the fort attack simulation environment. In each experiment, the proposed 'Ad hoc' agent is guard number 1 unless stated otherwise. 
+
+The following description highlights the key features of the experiments captured by the corresponding videos.
+<br></br>
+
+| Video | Description |
+| ------------ | :---------- |
+| 1 | The ad hoc agent spreads away from the other guards and shoots the attackers that are in its shooting range. (baseline policy: handcrafted policy 1) |
+
+| 2 a,b | A few steps after the game begins, one of the guards (3) gets removed from the environment, simulating an unexpected change in team composition. The ad hoc agent immediately spreads away from the remaining agent to shoot the attacker who is rapidly approaching the fort. (baseline policy: handcrafted policy 1) |
+
+| 3 | The ad hoc agent handles multiple attackers. (baseline policy: handcrafted policy 1) |
+
+| 4 | At the beginning of the game, the ad hoc agent spreads away from the other two guards to cover the range of the fort. However, after few steps in the game it recognises an attacker sneakily approaching the fort after escaping the other guard, it returns back to shoot it. (baseline policy: 650 in fort attack domain) |
+
+| 5 a,b | Unlike other guards, the ad hoc agent shoots only when it has a clear aim, i.e., when an attacker is in range or about to move within its range. (baseline policy: 200 in fort attack domain) |
+
+| 6 | In this policy attackers try to spread smartly and reach the fort. Ad hoc agent contributes to the victory of the guards by shooting the attacker (5) trying to reach the fort on its side. It then turns back to help the other guards when it notices the remaining two attackers (4, 6) getting close to the fort, although the other two guards eventually shoot these attackers (baseline policy: 1240 in fort attack domain) |
+
+| 7 | At the beginning of the game, the ad hoc guard agent position itself suitably by spreading away from the other guards to cover the fort region. Attackers in this policy are sneaky; they try to lure the guards away from the fort and (unknown to the guards, are able to) shoot them. Guard (3) moves further away from the fort to approach the attackers and gets shot. Guard (2) also moves out to target the attackers, while the ad hoc agent stays near the fort and outside the range of the approaching attacker (4), waiting for a chance to shoot the attacker. Guard (2) manages to shoot one attacker (5) but in doing so lets attacker (6) sneak in to the fort. (baseline policy: 1600 in fort attack domain) |
+
+| 8 | Two guards (2-3) move out from the fort and try to shoot the approaching attackers (5-6). One of the guards (3) manages to shoot one attacker (6) but they are both shot by the attackers. Unlike the other guards, the ad hoc agent learns to stay away from the attackers' shooting range while successfully shooting an attacker (4). It is unfortunately unable to get back in time to shoot the remaining attacker (5). The guards could have won the game if they tried to stay close to the fort and wait for a clear shot (thus extending the game time) instead of moving away. (baseline policy: 1600 in fort attack domain) | 
+
+| 9 | Ad hoc agent stays near the fort and guard (2) mimics its actions, while guard (3) moves away and get shot by an attacker (4). The two sneaky attackers (5)(6) wait near the farther wall of the game region, looking for a gap (i.e., an opportunity) to approach the fort or shoot the guards. Eventually they fail sincethe ad hoc agent and guard (2) manage to keep the fort safe until the maximum game time has elapsed. (baseline policy: 1600 in fort attack domain) |
+
+| 10 | The two guards(2-3) move out from the fort while ad hoc agent stays near the fort, spreading away from the other guards. Guard (2) successfully eliminates one attacker (4), narrowly escaping being shot down. Guard (3) shoots another attacker (6) but also gets shot in the process. The remaining attacker (5) who was waiting for an opportunity to sneak in, navigates out of the reach of guard (2) an attempts to approach the fort. Guard (2) fails to stops this sneaky attacker (5), but the ad hoc agent has positioned itself well and managed to shoot this attacker (5) and defend the fort. (baseline policy: 1600 in fort attack domain) |
+
+
